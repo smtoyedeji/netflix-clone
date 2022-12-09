@@ -1,0 +1,41 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    height: 70px;
+    z-index: 1;
+    color: #FFF;
+}
+.nav--left {
+    display: flex;    
+}
+
+.nav--left img {
+    width: 100px;
+    height: 30px;
+    align-self: center;
+}
+.nav--links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 560px;
+}
+
+
+.icons {
+    font-size: 24px;
+}
+.nav--right {
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav--avatar {
+    width: 32px;
+    border-radius: 2px;
+}
