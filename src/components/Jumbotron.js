@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import requests from '../requests'
-import "./Jumbotron.css"
-import favicon from "../images/favicon.ico"
-import { MdPlayArrow, MdInfoOutline } from "react-icons/md"
+import '../styles/Jumbotron.css'
+import favicon from '../images/favicon.ico'
+import { MdPlayArrow, MdInfoOutline } from 'react-icons/md'
 
 function Jumbotron() {
   const [movie, setMovie] = useState([])

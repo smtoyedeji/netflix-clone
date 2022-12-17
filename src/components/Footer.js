@@ -1,6 +1,10 @@
 import React from 'react'
-import { TbBrandGithub, TbBrandTwitter, TbBrandLinkedin } from "react-icons/tb";
-import "./Footer.css"
+import { 
+    TbBrandGithub, 
+    TbBrandTwitter, 
+    TbBrandLinkedin 
+} from 'react-icons/tb'
+import '../styles/Footer.css'
 
 
 function Footer() {

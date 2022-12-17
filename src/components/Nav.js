@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import './Nav.css'
+import '../styles/Nav.css'
 import logo from '../images/logonetflix.png'
 import { MdSearch, MdOutlineNotificationsNone } from 'react-icons/md'
 
@@ -13,8 +13,10 @@ function Nav() {
         }
     }
 
+   
+
     useEffect(() => {
-        window.addEventListener("scroll", changeBackground())
+        window.addEventListener("scroll", changeBackground) 
     })
 
     return (

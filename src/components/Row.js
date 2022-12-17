@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
-import "./Row.css"
-import { MdChevronLeft, MdChevronRight, MdPlayCircle, MdOutlineArrowDropDownCircle } from "react-icons/md"
-import { FiPlusCircle } from "react-icons/fi"
+import '../styles/Row.css'
+import { MdChevronLeft, MdChevronRight, MdPlayCircle, MdOutlineArrowDropDownCircle } from 'react-icons/md'
+import { FiPlusCircle } from 'react-icons/fi'
 
 const base_url = "https://image.tmdb.org/t/p/original/";
 
@@ -26,9 +26,8 @@ function Row(props) {
       .then(data => setMovies(data.results))
   }, [props.fetchUrl])
 
-  console.log(movies)
   let showMovies = movies.map(movie => (
-    <div className='image'>
+    <div className='image' key={movie.id}>
       <img src={`${base_url}${movie.poster_path}`} alt={movie.title} className="cards" />
       <div className='card--controls'>
         <div>
