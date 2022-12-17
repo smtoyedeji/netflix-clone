@@ -7,7 +7,8 @@ import { MdPlayArrow, MdInfoOutline } from "react-icons/md"
 function Jumbotron() {
   const [movie, setMovie] = useState([])
   const url = "https://api.themoviedb.org/3"
-  useEffect(() => {
+  
+  useEffect(() => { 
     fetch(url + requests.fetchNetflixOriginals)
       .then(res => res.json())
       .then(data => setMovie(data.results[Math.floor(Math.random() * data.results.length - 1)]))
@@ -18,27 +19,29 @@ function Jumbotron() {
         className='banner'
         style={{
           backgroundSize: 'cover',
-          backgroundImage: `url(https://image.tmdb.org/t/p/original/${movie.backdrop_path})`,
-          backgroundPosition: 'top center'
+          backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://image.tmdb.org/t/p/original/${movie.backdrop_path})`,
+          backgroundPosition: 'top center', 
+
         }}
       >
         <div className='title-logo'>
-          <span>
-            <img src={favicon} alt=""/>
+          <span className='series--logo'>
+            <img src={favicon} alt="" />
             <h4>Series</h4>
           </span>
           <h2>{movie.name}</h2>
           <p>{movie.overview}</p>
         </div>
-        <button>
-          <MdPlayArrow />
-          <span>Play</span>
-        </button>
-        <button>
-          <MdInfoOutline />
-          <span>More Info</span>
-        </button>
-      
+        <div className='btn'>
+          <button className='play--btn'>
+            <MdPlayArrow />
+            <span>Play</span>
+          </button>
+          <button className='info--btn'>
+            <MdInfoOutline />
+            <span>More Info</span>
+          </button>
+        </div>
       </div>
     </div>
   )

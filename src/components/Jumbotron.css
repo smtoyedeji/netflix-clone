@@ -2,7 +2,6 @@
     width: 100vw;
     height: 100vh;
     z-index: -1;
-    /* margin-top: -70px; */
 }
 .banner {
     width: 100%;
@@ -17,13 +16,78 @@
     color: #FFF;
     display: flex;
     flex-direction: column;
+    padding-top: 15%;
+    padding-left: 50px;
     margin: auto 0;
 
 }
 .title-logo span {
     display: flex;
 }
-button {
-    padding: 6px 18px;
+
+.series--logo {
+    display: flex;
     align-items: center;
+}
+
+.series--logo img {
+    width: 32px
+}
+
+.series--logo h4 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.title-logo h2 {
+    font-size: 42px;
+    margin-top: 14px;
+    letter-spacing: 2px;
+}
+.title-logo p {
+    font-size: 1.5em;
+    color: #FFFFFFAC;
+    max-width: 60%;
+    margin-bottom: 14px;
+}
+
+button {
+    padding: 12px 28px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn {
+    display: flex;
+    padding-left: 50px;
+}
+
+.btn span {
+    margin-left: 2px;
+    font-size: 0.8em;
+    font-weight: 600;
+
+}
+
+.play--btn {
+    margin-right: 0.5em;
+}
+
+.info--btn {
+    background-color: #3b3b3ba8;
+    color: #FFF;
+}
+
+.play--btn:hover {
+    background: #d1d0d0;
+}
+
+.info--btn:hover{
+    background: #5c5c5ca8;
 }
